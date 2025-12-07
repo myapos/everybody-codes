@@ -7,10 +7,8 @@ const move = {
     return steps % length;
   },
   "L": (steps: number, length: number) => {
-    if (steps <= length) {
-      return length - steps;
-    }
-    return length - (steps % length);
+    const mod = steps % length;
+    return mod === 0 ? 0 : length - mod;
   },
 };
 
@@ -23,14 +21,11 @@ const part3 = async (file: string): Promise<string> => {
   const instructions = instructionsStr.split(",");
 
   for (const instruction of instructions) {
-    if (instruction === "L30") {
-    }
     const direction = instruction[0] as InstructionType;
     const steps = parseInt(instruction.slice(1), 10);
     const nameIdx = move[direction](steps, names.length);
 
     swap(names, 0, nameIdx);
-    console.log("names", names);
   }
   return names[0];
 };

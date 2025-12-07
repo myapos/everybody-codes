@@ -44,7 +44,7 @@ const inputFileQuest1Part3 = "2025/quest1/inputPart3.txt";
 
 // await benchmark("Quest 1, Part 1: ", () => quest1Part1(inputFileQuest1Part1));
 // await benchmark("Quest 1, Part 2: ", () => quest1Part2(inputFileQuest1Part2));
-await benchmark("Quest 1, Part 3: ", () => quest1Part3(inputFileQuest1Sample));
+await benchmark("Quest 1, Part 3: ", () => quest1Part3(inputFileQuest1Part3));
 
 // // await benchmark("Day 2, Puzzle 1: ", () => day2puzzle1(inputFileDay2));
 // // await benchmark("Day 2, Puzzle 2: ", () => day2puzzle2(inputFileDay2));

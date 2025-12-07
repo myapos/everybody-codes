@@ -1,33 +1,12 @@
 import benchmark from "utils/benchmark";
-// import day1puzzle1 from "2025/day1/puzzle1";
-// import day1puzzle2 from "2025/day1/puzzle2";
-// import day2puzzle1 from "2025/day2/puzzle1";
-// import day2puzzle2 from "2025/day2/puzzle2";
-// import day3puzzle1 from "2025/day3/puzzle1";
-// import day3puzzle2 from "2025/day3/puzzle2";
-// import day4puzzle1 from "2025/day4/puzzle1";
-// import day4puzzle2 from "2025/day4/puzzle2";
-// import day4puzzle2Faster from "2025/day4/puzzle2Faster";
-// import day5puzzle1 from "2025/day5/puzzle1";
-// import day5puzzle2 from "2025/day5/puzzle2";
-// import day5Puzzle2WithUnionFind from "2025/day5/puzzle2WithUnionFind";
-// import day6puzzle1 from "2025/day6/puzzle1";
-// import day6puzzle2 from "2025/day6/puzzle2";
-// import day7puzzle1 from "2025/day7/puzzle1";
-// import day7puzzle2 from "2025/day7/puzzle2";
-// import day8puzzle1 from "2025/day8/puzzle1";
-// import day8puzzle2 from "2025/day8/puzzle2";
-// import day9puzzle1 from "2025/day9/puzzle1";
-// import day9puzzle2 from "2025/day9/puzzle2";
-// import day10puzzle1 from "2025/day10/puzzle1";
-// import day10puzzle2 from "2025/day10/puzzle2";
-// import day11puzzle1 from "2025/day11/puzzle1";
-// import day11puzzle2 from "2025/day11/puzzle2";
-// import day12puzzle1 from "2025/day12/puzzle1";
-// import day12puzzle2 from "2025/day12/puzzle2";
+import quest1Part1 from "2025/quest1/part1";
+import quest1Part2 from "2025/quest1/part2";
+import quest1Part3 from "2025/quest1/part3";
 
-// const inputFileDay1Sample = "2025/day1/inputSample.txt";
-// const inputFileDay1 = "2025/day1/input.txt";
+const inputFileQuest1Sample = "2025/quest1/inputSample.txt";
+const inputFileQuest1Part1 = "2025/quest1/inputPart1.txt";
+const inputFileQuest1Part2 = "2025/quest1/inputPart2.txt";
+const inputFileQuest1Part3 = "2025/quest1/inputPart3.txt";
 
 // const inputFileDay2Sample = "2025/day2/inputSample.txt";
 // const inputFileDay2 = "2025/day2/input.txt";
@@ -63,8 +42,9 @@ import benchmark from "utils/benchmark";
 // const inputFileDay12Sample = "2025/day12/inputSample.txt";
 // const inputFileDay12 = "2025/day12/input.txt";
 
-// // await benchmark("Day 1, Puzzle 1: ", () => day1puzzle1(inputFileDay1));
-// // await benchmark("Day 1, Puzzle 2: ", () => day1puzzle2(inputFileDay1));
+// await benchmark("Quest 1, Part 1: ", () => quest1Part1(inputFileQuest1Part1));
+// await benchmark("Quest 1, Part 2: ", () => quest1Part2(inputFileQuest1Part2));
+await benchmark("Quest 1, Part 3: ", () => quest1Part3(inputFileQuest1Sample));
 
 // // await benchmark("Day 2, Puzzle 1: ", () => day2puzzle1(inputFileDay2));
 // // await benchmark("Day 2, Puzzle 2: ", () => day2puzzle2(inputFileDay2));

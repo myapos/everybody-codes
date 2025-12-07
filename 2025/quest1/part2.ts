@@ -21,7 +21,6 @@ const move = {
 const part2 = async (file: string): Promise<string> => {
   const input = (await readFile(file, "string")) as string;
 
-  console.log("input", input);
   const [namesStr, instructionsStr] = input.split("\n\n");
 
   const names = namesStr.split(",");
@@ -32,7 +31,6 @@ const part2 = async (file: string): Promise<string> => {
     const direction = instruction[0] as InstructionType;
     const steps = parseInt(instruction.slice(1), 10);
     nameIdx = move[direction](nameIdx, steps, names.length);
-    console.log("name", names[nameIdx]);
   }
   return names[nameIdx];
 };
